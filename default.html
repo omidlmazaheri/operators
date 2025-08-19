@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>افزایش عدد با دکمه</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      padding: 20px;
+    }
+    input, button {
+      margin: 10px 0;
+      padding: 8px;
+      font-size: 16px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="numberInput">عدد اولیه را وارد کنید:</label><br>
+  <input type="number" id="numberInput" value="0"><br>
+
+  <button id="increaseBtn" onclick="inc()">افزایش بده</button>
+
+  <p id="result"></p>
+
+  <script>
+    const input = document.getElementById("numberInput");
+    const button = document.getElementById("increaseBtn");
+    const result = document.getElementById("result");
+
+    function inc() {
+        debugger
+         let currentValue = parseInt(input.value, 10);
+      currentValue += 1;
+      input.value = currentValue;
+      result.textContent = "مقدار فعلی: " + currentValue;
+    }
+    
+  </script>
+
+</body>
+</html>

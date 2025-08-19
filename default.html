@@ -37,7 +37,7 @@
 
     function inc() {
         debugger
-         let currentValue = parseInt(input.value, 10);
+         let currentValue = Number(input.value);
       currentValue += 1;
       input.value = currentValue;
       result.textContent = "مقدار فعلی: " + currentValue;
